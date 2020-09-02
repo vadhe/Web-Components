@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Club Finder</title>
+  </head>
+  <body class="relative">
+    <header>
+      <nav-bar></nav-bar>
+    </header>
+
+    <section
+      class="mt-6 px-4  h-auto grid grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3"
+    >
+      <div class="bg-yellow-500 mt-2 rounded h-20 text-center pt-4">
+        <h1 class="text-md font-bold text-white capitalize">confirmed</h1>
+        <p class="text-sm font-bold text-white uppercase" id="confirmed"></p>
+      </div>
+      <div class="bg-red-500 mt-2 rounded h-20 text-center pt-4">
+        <h1 class="text-md font-bold text-white capitalize">recovered</h1>
+        <p class="text-sm font-bold text-white uppercase" id="recovered"></p>
+      </div>
+      <div class="bg-blue-500 mt-2 rounded h-20 text-center pt-4">
+        <h1 class="text-md font-bold text-white capitalize">deaths</h1>
+        <p class="text-sm font-bold text-white uppercase" id="deaths"></p>
+      </div>
+    </section>
+    <search-component></search-component>
+    <section id="result" class=" mt-6 px-4  h-auto grid grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3">
+    
+    </section>
+
+    <footer class="bg-blue h-auto mt-20 md:mt-0  md:fixed md:bottom-0 w-full bg-blue-500 text-center py-6 text-white font-bold ">
+
+      <p>&copy; Rivaldi-Putra</p>
+      <a href="https://github.com/mathdroid/covid-19-api">Link Resource APi</a>
+
+    </footer>
+   
+  </body>
+</html>
